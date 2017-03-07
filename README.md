@@ -12,7 +12,7 @@ Once you ensured this, follow the steps below:
 - Go to the Connectors Section, Install a **Processor** connector and paste the script below.
 - Install the **Segment** connector and set up segment to send data to Hull.
 
-```js
+```javascript
 //Loop over all events we received in that batch
 _.map(events, (event)=>{
   //Extract Event properties and Name;
@@ -37,3 +37,4 @@ For instance instead of "Your business email", you might want to store the answe
 
 To do this, you need to go to each question's "Advanced" tab and fill in the `Admin Field Label`
 
+![label](admin_field_label.png)
