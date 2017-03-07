@@ -35,14 +35,14 @@ function hull_build_analytics_traits($form, $entry){
 
 //Build Analytics.js string
 function hull_analytics_snippet($form){
-  $traits = json_encode($form["data"]);
-  $name = $form["name"];
-  $id = $form["id"];
+  $data = json_encode($form->data);
+  $name = $form->name;
+  $id = $form->id;
   ?>
-<script type='text/javascript' defer async>
+<script type='text/javascript'>
   !(function(){
-    var traits = <?=$traits;?>;
-    var form = $.extend({}, traits, { form_name: <?=$name;?>, form_id: <?=$name;?> });
+    var traits = <?=$data;?>;
+    var form = jQuery.extend({}, traits, { form_name: "<?=$name;?>", form_id: "<?=$name;?>" });
     if (window.Hull) {
       Hull.ready(function(hull, me, app, org){
         hull.track("Form Submitted", form);
