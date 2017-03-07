@@ -16,7 +16,7 @@ Once you ensured this, follow the steps below:
 //Loop over all events we received in that batch
 _.map(events, (event)=>{
   //Extract Event properties and Name;
-  const { properties, event:name } = event;
+  const { properties, event: name } = event;
   //Early return if no properties or name is not something we capture
   if (!properties || name.toLowerCase()!=="form submitted") return;
   //Get Submitted form name
