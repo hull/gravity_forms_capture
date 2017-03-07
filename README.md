@@ -8,9 +8,9 @@ It assumes you have a working Segment setup, with their client-side library [ana
 Once you ensured this, follow the steps below:
 
 - [Download this Wordpress Plugin](https://github.com/hull/gravity_forms_capture/archive/master.zip), and activate it.
-- Go to your Hull dashboard. Ensure in Settings > User Authentication > Login Options that `Guest Users` are active, Save.
-- Go to the Connectors Section, Install a Processor connector and paste the script below.
-- Install the Segment connector and set up segment to send data to Hull.
+- Go to your [Hull dashboard](https://dashboard.hullapp.io). Ensure in Settings > User Authentication > Login Options that `Guest Users` are active, Save.
+- Go to the Connectors Section, Install a **Processor** connector and paste the script below.
+- Install the **Segment** connector and set up segment to send data to Hull.
 
 ```js
 //Loop over all events we received in that batch
